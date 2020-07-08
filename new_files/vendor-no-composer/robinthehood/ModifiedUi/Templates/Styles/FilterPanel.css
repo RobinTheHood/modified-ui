@@ -1,0 +1,37 @@
+.rth-modified-ui-filter-panel {
+    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff;
+    padding-top: 4px;
+    margin-bottom: 10px;
+}
+
+.rth-modified-ui-filter-panel:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.rth-modified-ui-filter-panel .rth-modified-ui-filter-panel-filter {
+    height: 35px;
+    float: left;
+    margin: 5px;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.rth-modified-ui-filter-select-caption {
+    height: 27px;
+    float: left;
+    padding-top: 8px;
+    margin-right: 4px;
+}
+
+.rth-modified-ui-filter-select {
+    height: 32px;
+    float: left;
+    padding-top: 3px;
+}
+
+.rth-modified-ui-filter-panel-filter .rth-modified-ui-textfield {
+    width: inherit;
+}

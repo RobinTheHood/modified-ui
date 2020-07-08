@@ -1,0 +1,22 @@
+.rth-modified-ui-action-panel {
+    border: 1px solid #cccccc;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.rth-modified-ui-action-panel .rth-modified-ui-action-panel-heading {
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 2px solid rgb(175, 65, 126);
+    margin-bottom: 10px;
+}
+
+.rth-modified-ui-action-panel .rth-modified-ui-action-panel-separator {
+    margin: 20px 0px 20px 0px;
+    border-top: 1px solid #bbbbbb;
+}
+
+.rth-modified-ui-action-panel .SumoSelect {
+    font-size: 12px;
+}

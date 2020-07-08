@@ -1,0 +1,28 @@
+.rth-modified-ui-page-heading {
+    color: #000000;
+    font-family: Verdana,Arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+.rth-modified-ui-page-heading .rth-modified-ui-page-heading-image {
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 3px 5px 0px 5px;
+}
+
+.rth-modified-ui-page-heading .rth-modified-ui-page-heading-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.rth-modified-ui-page-heading .rth-modified-ui-page-heading-subtext {
+    font-size: 12px;
+}
+
+.rth-modified-ui-page-heading::after{
+    content: '';
+    clear: both;
+    display: block;
+}

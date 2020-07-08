@@ -1,0 +1,44 @@
+.rth-modified-ui-tabpanel {
+}
+
+.rth-modified-ui-tabpanel-nav {
+    border-bottom: 1px solid #cccccc;
+}
+
+.rth-modified-ui-tabpanel-nav::after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.rth-modified-ui-tabpanel-navitem {
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: -1px;
+}
+
+.rth-modified-ui-tabpanel-navitem.active {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-bottom: 1px solid transparent;
+    padding: 14px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.rth-modified-ui-tabpanel-content {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.rth-modified-ui-tabpanel-content-item {
+    background-color: #ffffff;
+    display: none;
+    padding: 5px;
+}
+
+.rth-modified-ui-tabpanel-content-item.active {
+    display: block;
+}

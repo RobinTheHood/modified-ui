@@ -1,0 +1,36 @@
+{
+    "name": "Modul robinthehood/modified-ui",
+    "archiveName": "robinthehood/modified-ui",
+    "sourceDir": "new_files",
+    "version": "auto",
+    
+    "shortDescription": "Kurzbeschreibung für robinthehood/modified-ui",
+    "description": "Beschreibung für robinthehood/modified-ui",
+    
+    "developer": "Robin Wieschendorf",
+    "developerWebsite": "https://robinwieschendorf.de",
+    "website": "https://robinwieschendorf.de",
+
+    "category": "library",
+    "price": "free",
+
+    "require": {
+        "composer/autoload": "^1.0.0",
+        "robinthehood/modified-orm": "^1.0.0"
+    },
+
+    "modifiedCompatibility": [
+        "2.0.3.0",
+        "2.0.4.0",
+        "2.0.4.1",
+        "2.0.4.2",
+        "2.0.5.0",
+        "2.0.5.1"
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "RobinTheHood\\": "/vendor-no-composer/robinthehood"
+        }
+    }
+}

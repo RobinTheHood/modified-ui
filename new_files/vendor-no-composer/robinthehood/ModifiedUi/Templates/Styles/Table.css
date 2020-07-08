@@ -1,0 +1,55 @@
+.rth-modified-ui-table * {
+    box-sizing: border-box;
+}
+
+.rth-modified-ui-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid #aaaaaa;
+    table-layout: fixed;
+}
+
+.rth-modified-ui-table thead tr.rth-modified-ui-table-row {
+    background-color: #aaa;
+    color: #000000;
+    border-bottom: 1px solid;
+    border-color: #000000;
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+}
+
+.rth-modified-ui-table tbody tr.rth-modified-ui-table-row {
+    height: 35px;
+}
+
+.rth-modified-ui-table tbody tr.rth-modified-ui-table-row:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.rth-modified-ui-table thead tr th.rth-modified-ui-table-cell {
+    vertical-align: middle;
+    padding: 10px 5px 10px 5px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #cccccc;
+}
+
+.rth-modified-ui-table tbody tr td.rth-modified-ui-table-cell {
+    padding: 5px 5px 5px 5px;
+    border-color: #cccccc;
+    font-size: 10px;
+    color: #000000;
+    vertical-align: middle;
+    border-bottom: 1px solid #aaa;
+}
+
+.rth-modified-ui-table tbody tr.rth-modified-ui-table-row.ui-sortable-helper {
+    display: table;
+    background-color: yellow;
+}
+
+.rth-modified-ui-table tbody tr.rth-modified-ui-table-row.ui-sortable-handle {
+    -border: 1px solid red;
+}

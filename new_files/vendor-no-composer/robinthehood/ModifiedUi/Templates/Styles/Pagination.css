@@ -1,0 +1,52 @@
+.rth-modified-ui-pagination {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    background-color: #dddddd;
+}
+
+.rth-modified-ui-pagination-right {
+    float: right;
+    text-align: center;
+}
+
+.rth-modified-ui-pagination::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.rth-modified-ui-pagination-page-items-label {
+    float: left;
+    width: 200px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.rth-modified-ui-pagination-page-items-select {
+    float: left;
+    width: 80px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.rth-modified-ui-pagination-page-items-select .SumoSelect {
+    width: initial;
+}
+
+.rth-modified-ui-pagination-page {
+    float: left;
+    width: 120px;
+    margin-top: 5px;
+}
+
+.rth-modified-ui-pagination-prev {
+    float: left;
+    width: 30px;
+    margin-top: 5px;
+}
+
+.rth-modified-ui-pagination-next {
+    float: left;
+    width: 30px;
+    margin-top: 5px;
+}
