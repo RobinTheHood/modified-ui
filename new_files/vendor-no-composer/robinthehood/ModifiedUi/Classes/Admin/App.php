@@ -17,19 +17,8 @@ class App
                 die();
             }
         }
-        // if ($_GET['jsCallFunction']) {
-        //
-        //
-        //     $html = json_encode($_GET);
-        //     $result['html'] = $html;
-        //     //$result['js'] = '$(\'#' . $component->getViewId() . '\').html(' . $html . ');';
-        //     echo \json_encode($result);
-        //     die();
-        // }
-
+        
         $callFunctionName = $_GET['jsCallbackFunction'];
-        // var_dump($_GET);
-        // var_dump(self::$callFunctions);
         if (self::$callFunctions[$callFunctionName]) {
             $jsBuildFunction = self::$callFunctions[$callFunctionName]();
             $js = $jsBuildFunction();

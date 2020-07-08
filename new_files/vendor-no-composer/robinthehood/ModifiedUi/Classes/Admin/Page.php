@@ -11,7 +11,6 @@ class Page extends View
     private $subHeading = 'No sub-heading';
     private $iconPath = DIR_WS_ICONS . 'heading/icon_modules.png';
     private $panel = null;
-    //private $registeredFunctions = [];
 
     public function __construct()
     {
@@ -49,33 +48,6 @@ class Page extends View
     {
         $this->panel->addComponent($component);
     }
-
-    // public function registerFunction($function, $functionName)
-    // {
-    //     $this->registeredFunctions[$functionName] = $function;
-    // }
-    //
-    // public function jsReload($component, $phpFunction)
-    // {
-    //     $functionName = 'jsCallbackFunction' . count($this->registeredFunctions);
-    //     $this->registerFunction($phpFunction, $functionName);
-    //
-    //     return function () use ($functionName, $component) {
-    //         $url = '?jsCallbackFunction=' . $functionName;
-    //         $data = [];
-    //
-    //         return JsBuilder::jsGetReqeust($url, $data, $component);
-    //     };
-    // }
-    //
-    // public function callRegisteredFunctions()
-    // {
-    //     $callFunction = $_GET['jsCallbackFunction'];
-    //     if ($this->registeredFunctions[$callFunction]) {
-    //         $this->registeredFunctions[$callFunction]();
-    //         die();
-    //     }
-    // }
 
     public function render()
     {

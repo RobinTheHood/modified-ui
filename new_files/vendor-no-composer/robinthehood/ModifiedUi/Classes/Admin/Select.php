@@ -43,7 +43,6 @@ class Select extends FormInput
 
         $this->addJsOnChange(function() use ($form, $hidden) {
             return JsBuilder::jsCopyValueRaw($this->getSubViewId('Select'), $hidden->getViewId());
-            //return $form->jsCopyValue($this->getSubViewId('Select'), $hidden->getViewId());
         });
     }
 

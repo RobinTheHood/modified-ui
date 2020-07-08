@@ -6,8 +6,6 @@ use RobinTheHood\ModifiedUi\Classes\Admin\Action;
 
 class ActionPanel extends View
 {
-    //private $components = [];
-
     function addAction($caption)
     {
         $action = new Action();
@@ -96,106 +94,4 @@ class ActionPanel extends View
             </div>
         ';
     }
-
-    // public function renderOff()
-    // {
-    //     return $this->renderHeading() . '
-    //     <table class="contentTable">
-    //         <tbody>
-    //             <tr class="infoBoxContent">
-    //                 <td class="infoBoxContent">
-    //                     <div class="rth-modified-ui-action-panel">' . $this->renderComponents() . '</div>
-    //                 </td>
-    //             </tr>
-    //
-    //             <tr class="infoBoxContent">
-    //                 <td class="infoBoxContent">
-    //                     Mit diesem Modul von First-Web können Sie bei allen ausgewählten Bestellungen gleichzeitig den Status ändern oder die Rechnungen drucken lassen.
-    //                 </td>
-    //             </tr>
-    //         </tbody>
-    //     </table>
-    //     ';
-    // }
-    //
-    // public function renderHeading()
-    // {
-    //     return '
-    //         <table class="contentTable">
-    //             <tbody>
-    //                 <tr class="infoBoxHeading">
-    //                     <td class="infoBoxHeading">
-    //                         <div class="infoBoxHeadingTitle">
-    //                             <b>Aktion</b>
-    //                         </div>
-    //                     </td>
-    //                 </tr>
-    //             </tbody>
-    //         </table>
-    //     ';
-    // }
-
-    // public function renderDropdown($name, $options, $form)
-    // {
-    //     $optionsHtml = '';
-    //     foreach($options as $option) {
-    //         $optionsHtml .= '<option value="' . $option['value'] . '">' . $option['name'] . '</option>';
-    //     }
-    //
-    //     if ($form) {
-    //         $hiddenName = $form->getHiddenName($name);
-    //     }
-    //
-    //     return '
-    //         <select name="' . $name . '" class="fw-input" onchange="
-    //         document.getElementById(\'' . $hiddenName . '\').value = this.value;
-    //         ">
-    //             ' . $optionsHtml . '
-    //         </select>
-    //         <br>
-    //     ';
-    // }
-
-    // public function addAction($caption, $action, $form = null)
-    // {
-    //     $this->components[] = [
-    //         'type' => 'action',
-    //         'component' => [
-    //             'caption' => $caption,
-    //             'action' => $action,
-    //             'form' => $form
-    //         ]
-    //     ];
-    //
-    //     $form->addHidden('action');
-    // }
-
-    // public function addDropdown($name, $options, $form = null)
-    // {
-    //     $this->components[] = [
-    //         'type' => 'dropdown',
-    //         'component' => [
-    //             'name' => $name,
-    //             'options' => $options,
-    //             'form' => $form
-    //         ]
-    //     ];
-    //
-    //     $form->addHidden($name);
-    // }
-
-    // public function renderAction($caption, $action, $form)
-    // {
-    //     if ($form) {
-    //         $hiddenName = $form->getHiddenName('action');
-    //         $formId = $form->getId();
-    //     }
-    //
-    //     return '
-    //         <input type="submit" class="button fw-input" onclick="
-    //         document.getElementById(\'' . $hiddenName . '\').value=\'' . $action . '\';
-    //         document.getElementById(\'' . $formId . '\').submit();
-    //         this.blur();" value="' . $caption . '">
-    //     ';
-    // }
 }

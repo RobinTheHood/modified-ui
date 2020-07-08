@@ -61,29 +61,15 @@ class Form extends View
         return $textArea;
     }
 
-    // public function jsSetValue($viewId, $value)
-    // {
-    //     return 'document.getElementById(\'' . $viewId . '\').value=\'' . $value . '\';';
-    // }
-
-    // public function jsCopyValue($viewIdSrc, $viewIdDes)
-    // {
-    //     return '
-    //         var copyValue = document.getElementById(\'' . $viewIdSrc . '\').value;
-    //         document.getElementById(\'' . $viewIdDes . '\').value=copyValue;
-    //     ';
-    // }
 
     public function jsSetAction($action)
     {
-        //return $this->jsSetValue($this->hiddenAction->getViewId(), $action);
         return JsBuilder::jsSetValue($this->hiddenAction, $action);
     }
 
     public function jsSubmit()
     {
         return JsBuilder::jsSubmit($this);
-        //return 'document.getElementById(\'' . $this->getViewId() . '\').submit(); this.blur();';
     }
 
     public function render()

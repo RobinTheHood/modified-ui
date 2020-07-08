@@ -73,7 +73,6 @@ class Table extends View
                 $tableCell->addComponent($checkbox);
                 $collumn['checkbox']->addJsOnChange(function() use ($checkbox, $collumn) {
                     return JsBuilder::jsCopyChecked($collumn['checkbox'], $checkbox);
-                    //return $this->jsCopyChecked($collumn['checkbox']->getViewId(), $checkbox->getViewId());
                 });
             }
 
@@ -82,14 +81,6 @@ class Table extends View
 
         $this->addTableRow($tableRow);
     }
-
-    // public function jsCopyChecked($viewIdSrc, $viewIdDes)
-    // {
-    //     return '
-    //         var checked = document.getElementById(\'' . $viewIdSrc . '\').checked;
-    //         document.getElementById(\'' . $viewIdDes . '\').checked=checked;
-    //     ';
-    // }
 
     public function addTableRow($tableRow)
     {
@@ -100,8 +91,6 @@ class Table extends View
 
     public function select($name, $value)
     {
-        //$this->selections[$name][$id] = true;
-
         foreach($this->tableRows as $tableRow) {
             $tableRow->select($name, $value);
         }
@@ -125,12 +114,6 @@ class Table extends View
 
     public function render()
     {
-        //($this->loadFunction)($this);
-        // if ($this->loadFunction) {
-        //     $function = $this->loadFunction;
-        //     $function($this);
-        // }
-
         return '
             <table id=' . $this->getViewId() . ' class="rth-modified-ui-table">
                 <thead>
@@ -158,106 +141,7 @@ class Table extends View
         return $html;
     }
 
-    //////////// OLD
-
-
-    // public function renderOff()
-    // {
-    //     return '
-    //                 <table class="rth-modified-ui-table">
-    //                     <thead>
-    //                         <tr>
-    //                             <th>Vorname</td>
-    //                             <th>Nachname</td>
-    //                             <th>Alter</td>
-    //                             <th>Geschlecht</td>
-    //                         </tr>
-    //                     </thead>
-    //                     <tbody>
-    //                         <tr>
-    //                             <td>Robin</td>
-    //                             <td>Wieschendorf</td>
-    //                             <td>32</td>
-    //                             <td>männlich</td>
-    //                         </tr>
-    //
-    //                         <tr>
-    //                             <td>Catrin</td>
-    //                             <td>Gloystein</td>
-    //                             <td>31</td>
-    //                             <td>weiblich</td>
-    //                         </tr>
-    //
-    //                         <tr>
-    //                             <td>Jenny</td>
-    //                             <td>Hoffmann</td>
-    //                             <td>30</td>
-    //                             <td>weiblich</td>
-    //                         </tr>
-    //                     </tbody>
-    //                 </table>
-    //     ';
-    // }
-
-    // public function addCollumnOld($component, $alignment = 'left')
-    // {
-    //     if ($component instanceof Checkbox) {
-    //         $type = 'checkbox';
-    //     } else {
-    //         $type = 'text';
-    //     }
-    //
-    //     $this->collumns[] = [
-    //         'component' => $component,
-    //         'alignment' => $alignment,
-    //         'type' => $type
-    //     ];
-    // }
-
-    // public function setCheckbox($name)
-    // {
-    //     $checkbox = new Checkbox();
-    //     $checkbox->setName($name);
-    //     $this->checkbox = $checkbox;
-    // }
-
-    // public function addForm($form)
-    // {
-    //     $this->form = $form;
-    // }
-
-    // public function renderOld()
-    // {
-    //     $html = '';
-    //
-    //     if ($this->form) {
-    //         $html .= $this->form->renderOpen();
-    //     }
-    //
-    //     $html .= $this->renderTable();
-    //
-    //     if ($this->form) {
-    //         $html .= $this->form->renderClose();
-    //     }
-    //
-    //     $html .= $this->renderScript();
-    //
-    //     return $html;
-    // }
-
-    // public function renderTable()
-    // {
-    //     return '
-    //         <table class="tableBoxCenter collapse">
-    //             <tbody>
-    //                 <tr class="dataTableHeadingRow">
-    //                     ' . $this->renderHeadings() . '
-    //                 </tr>
-    //                 ' . $this->renderRows() . '
-    //             </tbody>
-    //         </table>
-    //         ';
-    // }
+    
 
     public function renderScript()
     {
@@ -286,82 +170,4 @@ class Table extends View
 
         return $html;
     }
-
-    // public function renderHeadings()
-    // {
-    //     $html = '';
-    //
-    //     if ($this->checkbox) {
-    //         $html .= '
-    //             <td class="dataTableHeadingContent">
-    //                 ' . $this->checkbox->render() . '
-    //             </td>
-    //         ';
-    //     }
-    //
-    //     foreach($this->collumns as $collumn) {
-    //         if ($collumn['type'] == 'checkbox') {
-    //             $html .= '
-    //                 <td class="dataTableHeadingContent">
-    //                     ' . $collumn['component']->render() . '
-    //                 </td>
-    //             ';
-    //         } else {
-    //             $html .= '<td class="dataTableHeadingContent">' . $collumn['component'] . '</td>' . "\n";
-    //         }
-    //     }
-    //     return $html;
-    // }
-
-    // public function renderRowsOld()
-    // {
-    //     $html = '';
-    //
-    //     foreach($this->rows as $row) {
-    //         $html .= $this->renderRow($row['values'], $row['id']);
-    //     }
-    //     return $html;
-    // }
-
-    // public function renderRow($row, $rowId)
-    // {
-    //     $html = '<tr class="dataTableRow">';
-    //
-    //     for ($i = 0; $i<count($this->collumns); $i++) {
-    //         $collumnType = $this->collumns[$i]['type'];
-    //         $collumnComponent = $this->collumns[$i]['component'];
-    //         $cellValue = $row[$i];
-    //         $cellHtml = '';
-    //
-    //         if ($collumnType == 'text') {
-    //             if (is_object($cell)) {
-    //                 $cellHtml = $cellValue->render();
-    //             } else {
-    //                 $cellHtml = $cellValue;
-    //             }
-    //         } elseif ($collumnType == 'checkbox') {
-    //             $cellHtml = $this->renderCheckbox($collumnComponent, $cellValue, $rowId);
-    //         }
-    //
-    //         $html .= '<td class="dataTableContent">' . $cellHtml . '</td>';
-    //     }
-    //     $html .= '</tr>';
-    //
-    //     return $html;
-    // }
-
-    // public function renderCheckbox($checkbox, $value, $rowId)
-    // {
-    //     $name = $checkbox->getName();
-    //
-    //     $newCheckbox = new Checkbox();
-    //     $newCheckbox->setName($name . '[]');
-    //     $newCheckbox->setValue($value);
-    //
-    //     if ($this->selections[$name][$rowId]) {
-    //         $newCheckbox->setChecked(true);
-    //     }
-    //
-    //     return $newCheckbox->render();
-    // }
 }

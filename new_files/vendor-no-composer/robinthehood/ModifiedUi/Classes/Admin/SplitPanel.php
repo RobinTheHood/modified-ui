@@ -56,18 +56,5 @@ class SplitPanel extends View
                 </div>
             </div>
         ';
-
-        // return '
-        //     <table id="' . $this->getViewId() . '" class="rth-modified-ui-splitpanel">
-        //         <tr>
-        //             <td style="width: ' . $this->leftWidth . '">
-        //                     ' . $leftContent . '
-        //             </td>
-        //             <td style="width: ' . $this->rightWidth . '">
-        //                     ' . $rightContent  . '
-        //             </td>
-        //         </tr>
-        //     </table>
-        // ';
     }
 }
