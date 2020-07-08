@@ -26,6 +26,7 @@
     color: #dddddd;
     background-color: #444444;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .rth-modified-ui-button:hover {
