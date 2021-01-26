@@ -7,7 +7,9 @@ use RobinTheHood\ModifiedUi\Classes\Admin\Action;
 
 class ActionPanel extends View
 {
-    function addAction($caption)
+    private $title = 'ActionPanel';
+
+    public function addAction($caption)
     {
         $action = new Action();
         $action->setCaption($caption);
@@ -71,10 +73,8 @@ class ActionPanel extends View
                 $html .= $component['action']->render();
             // } elseif ($type == 'dropdown') {
             //     $html .= $this->renderDropdown($component['name'], $component['options'], $component['form']);
-
             } elseif ($type == 'Select') {
                 $html .= $this->renderSelect($component['caption'], $component['select']);
-
             } elseif ($type == 'separator') {
                 $html .= $this->renderSeparator();
             }
@@ -87,7 +87,7 @@ class ActionPanel extends View
         return '
             <div class="rth-modified-ui-action-panel">
                 <div class="rth-modified-ui-action-panel-heading">
-                    Aktion für ausgewählte Objekte
+                    ' . $this->title . '
                 </div>
                 <div class="rth-modified-ui-action-panel-body">
                     ' . $this->renderComponents() . '
