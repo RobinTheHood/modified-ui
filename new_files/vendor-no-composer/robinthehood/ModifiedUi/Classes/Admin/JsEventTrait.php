@@ -72,19 +72,19 @@ trait JsEventTrait
         $jsCode = '';
         foreach ($functions as $function) {
             $jsCode .= $function();
-        } 
+        }
         return $jsCode;
     }
 
     /**
-     * @param string $event 
+     * @param string $event
      * @param array<callable():JavaScript> $functions
      */
     public function renderJsEvent(string $event, array $functions): string
     {
         $jsCode = $this->renderJs($functions);
         if ($jsCode) {
-            return $event. '="' . $jsCode . '"';
+            return $event . '="' . $jsCode . '"';
         }
         return '';
     }
