@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -35,7 +36,7 @@ class FilterPanel extends View
         $select = new Select($name);
         $select->setOptions($options);
         $select->setValue($value);
-        $select->addJsOnChange(function() {
+        $select->addJsOnChange(function () {
             return 'this.form.submit();';
         });
 
@@ -84,13 +85,12 @@ class FilterPanel extends View
     {
         $html = '<div id="' . $this->getViewId() . '" class="rth-modified-ui-filter-panel">';
 
-        foreach($this->components as $component) {
+        foreach ($this->components as $component) {
             $type = $component['type'];
             $component = $component['component'];
 
             if ($type == 'TextField') {
                 $html .= $this->renderTextFieldFilter($component['caption'], $component['textField']);
-
             } elseif ($type == 'Select') {
                 $html .= $this->renderSelectFilter($component['caption'], $component['select']);
             }

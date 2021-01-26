@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -21,11 +22,11 @@ class Button extends View
 
     public function addJsSubmitForm($form, $action)
     {
-        $this->addJsOnClick(function() use ($form, $action) {
+        $this->addJsOnClick(function () use ($form, $action) {
             return $form->jsSetAction($action);
         });
 
-        $this->addJsOnClick(function() use ($form) {
+        $this->addJsOnClick(function () use ($form) {
             return $form->jsSubmit();
         });
     }
@@ -35,7 +36,7 @@ class Button extends View
     {
         $functionName = App::registerFunction($function);
 
-        $this->addJsOnClick(function() use ($params, $functionName) {
+        $this->addJsOnClick(function () use ($params, $functionName) {
             $url = '?jsCallbackFunction=' . $functionName;
             $jsSuccessFunction = JsBuilder::jsEvalGetResult();
             return JsBuilder::jsGetRequest($url, $params, $jsSuccessFunction);

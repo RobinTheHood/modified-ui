@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -27,7 +28,7 @@ class TableCell extends View
     public function select($name, $value)
     {
         $components = $this->getComponents();
-        foreach($components as $component) {
+        foreach ($components as $component) {
             if ($component instanceof Checkbox) {
                 if ($component->getValue() == $value) {
                     $component->setChecked(true);
@@ -56,7 +57,6 @@ class TableCell extends View
                     ' . $contentHtml . '
                 </th>
             ';
-
         } else {
             return '
                 <td id="' . $this->getViewId() . '" class="rth-modified-ui-table-cell" ' . $this->renderStyle() . '>

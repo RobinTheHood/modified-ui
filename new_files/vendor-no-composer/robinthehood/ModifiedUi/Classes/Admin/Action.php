@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -16,11 +17,11 @@ class Action extends View
 
     public function addJsSubmitForm($form, $action)
     {
-        $this->addJsOnClick(function() use ($form, $action) {
+        $this->addJsOnClick(function () use ($form, $action) {
             return $form->jsSetAction($action);
         });
 
-        $this->addJsOnClick(function() use ($form) {
+        $this->addJsOnClick(function () use ($form) {
             return $form->jsSubmit();
         });
     }

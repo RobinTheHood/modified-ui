@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -27,7 +28,7 @@ class Select extends FormInput
     private function convertOptions($options)
     {
         $entrys = [];
-        foreach($options as $option) {
+        foreach ($options as $option) {
             $entrys[] = [
                 'id' => $option['value'],
                 'text' => $option['name']
@@ -41,7 +42,7 @@ class Select extends FormInput
         $hidden = new Hidden($this->getName());
         $form->addComponent($hidden);
 
-        $this->addJsOnChange(function() use ($form, $hidden) {
+        $this->addJsOnChange(function () use ($form, $hidden) {
             return JsBuilder::jsCopyValueRaw($this->getSubViewId('Select'), $hidden->getViewId());
         });
     }

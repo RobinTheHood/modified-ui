@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -47,7 +48,7 @@ class TabPanel extends View
     {
         $html = '';
 
-        foreach($this->tabs as $tab) {
+        foreach ($this->tabs as $tab) {
             $html .= $tab->renderNavItem();
         }
 
@@ -58,7 +59,7 @@ class TabPanel extends View
     {
         $html = '';
 
-        foreach($this->tabs as $tab) {
+        foreach ($this->tabs as $tab) {
             $html .= $tab->renderTabContent();
         }
 

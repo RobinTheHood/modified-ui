@@ -1,6 +1,6 @@
 <?php
-namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
+namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 class App
 {

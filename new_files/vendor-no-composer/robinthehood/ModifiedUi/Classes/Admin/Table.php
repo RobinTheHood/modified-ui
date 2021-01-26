@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -55,7 +56,7 @@ class Table extends View
     {
         $index = 0;
         $tableRow = new TableRow();
-        foreach($this->collumns as $collumn) {
+        foreach ($this->collumns as $collumn) {
             $value = $values[$index++];
 
             $tableCell = new TableCell();
@@ -71,7 +72,7 @@ class Table extends View
                 $checkbox = new Checkbox('ids[]');
                 $checkbox->setValue($value);
                 $tableCell->addComponent($checkbox);
-                $collumn['checkbox']->addJsOnChange(function() use ($checkbox, $collumn) {
+                $collumn['checkbox']->addJsOnChange(function () use ($checkbox, $collumn) {
                     return JsBuilder::jsCopyChecked($collumn['checkbox'], $checkbox);
                 });
             }
@@ -91,7 +92,7 @@ class Table extends View
 
     public function select($name, $value)
     {
-        foreach($this->tableRows as $tableRow) {
+        foreach ($this->tableRows as $tableRow) {
             $tableRow->select($name, $value);
         }
     }
@@ -132,7 +133,7 @@ class Table extends View
     {
         $html = '';
         $count == 0;
-        foreach($this->tableRows as $row) {
+        foreach ($this->tableRows as $row) {
             if ($count++ == 0) {
                 continue;
             }
@@ -147,7 +148,7 @@ class Table extends View
     {
         $html = '';
 
-        foreach($this->collumns as $collumn) {
+        foreach ($this->collumns as $collumn) {
             if ($collumn['type'] != 'checkbox') {
                 continue;
             }

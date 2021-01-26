@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -33,7 +34,7 @@ class TableRow extends View
 
     public function select($name, $value)
     {
-        foreach($this->tableCells as $tableCell) {
+        foreach ($this->tableCells as $tableCell) {
             $tableCell->select($name, $value);
         }
     }
@@ -46,23 +47,19 @@ class TableRow extends View
                     ' . $this->renderTableCells() . '
                 </tr>
             ';
-
         } else {
             return '
                 <tr id="' . $this->getViewId() . '" class="rth-modified-ui-table-row">
                     ' . $this->renderTableCells() . '
                 </tr>
             ';
-
         }
-
     }
 
     public function renderTableCells()
     {
         $html = '';
-        foreach($this->tableCells as $tableCell)
-        {
+        foreach ($this->tableCells as $tableCell) {
             $html .= $tableCell->render();
         }
         return $html;

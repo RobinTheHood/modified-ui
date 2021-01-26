@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 class JsBuilder
@@ -72,7 +73,6 @@ class JsBuilder
      * @param string $url
      * @param string $data
      * @param string $jsSuccessFunction
-     * 
      * @return string Returns JavaScript code as string.
      */
     public static function jsGetRequestRaw($url, $data, $jsSuccessFunction): string
@@ -88,7 +88,6 @@ class JsBuilder
      * @param string $url
      * @param array $params
      * @param string $jsSuccessFunction
-     * 
      * @return string Returns JavaScript code as string.
      */
     public static function jsGetRequest($url, $params, $jsSuccessFunction): string
@@ -106,7 +105,6 @@ class JsBuilder
     /**
      * @param string $viewIdSrc
      * @param string $viewIdDest
-     * 
      * @return string Returns JavaScript code as string.
      */
     public static function jsCopyCheckedRaw(string $viewIdSrc, string $viewIdDest): string
@@ -120,7 +118,6 @@ class JsBuilder
     /**
      * @param View $viewSrc
      * @param View $viewDest
-     * 
      * @return string Returns JavaScript code as string.
      */
     public static function jsCopyChecked($viewSrc, $viewDest): string

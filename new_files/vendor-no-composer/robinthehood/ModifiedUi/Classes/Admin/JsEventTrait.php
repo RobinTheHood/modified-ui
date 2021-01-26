@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 trait JsEventTrait
@@ -21,7 +22,7 @@ trait JsEventTrait
     /**
      * Add a PHP-Callable function which return JavaScript code that
      * will be executed on a JS onClick() event.
-     * 
+     *
      * @param callable():JavaScript $function
      */
     public function addJsOnClick($function)
@@ -36,7 +37,7 @@ trait JsEventTrait
     /**
      * Add a PHP-Callabe function which return JavaScript code that
      * will be executed on a JS onChange() event.
-     * 
+     *
      * @param callable():JavaScript $function
      */
     public function addJsOnChange($function)
@@ -51,7 +52,7 @@ trait JsEventTrait
     /**
      * Add a PHP-Callable function which return JavaScript code that
      * will be executed on a JS onKeyup() event.
-     * 
+     *
      * @param callable():JavaScript $function
      */
     public function addJsOnKeyup($function)

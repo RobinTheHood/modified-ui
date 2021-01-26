@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 class View
@@ -52,7 +53,7 @@ class View
             return $this;
         }
 
-        foreach($this->components as $component) {
+        foreach ($this->components as $component) {
             $result = $component->getComponentsByViewId($viewId);
             if ($result) {
                 return $result;

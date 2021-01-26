@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\View;
@@ -62,7 +63,7 @@ class ActionPanel extends View
     public function renderComponents()
     {
         $html = '';
-        foreach($this->components as $component) {
+        foreach ($this->components as $component) {
             $type = $component['type'];
             $component = $component['component'];
 

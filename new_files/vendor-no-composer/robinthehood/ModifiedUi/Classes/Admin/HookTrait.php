@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Admin;
 
 trait HookTrait
@@ -29,7 +30,7 @@ trait HookTrait
         }
 
         $result = '';
-        foreach($this->components as $component) {
+        foreach ($this->components as $component) {
             $result .= $component->callHooks();
         }
 
