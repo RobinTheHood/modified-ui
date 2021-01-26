@@ -18,7 +18,6 @@ class FormExample2
         $page = new Page();
         $page->setHeading('Heading: Test06');
         $page->setSubHeading('Subheading: Form-Test 2');
-        $page->setIconPath(DIR_WS_ICONS . 'heading/fw_multi_order.png');
 
         $form = new Form();
         $page->addComponent($form);

@@ -10,7 +10,6 @@ class PanelExample1
     {
         $page = new Page();
         $page->setHeading('Panel Example 1');
-        $page->setIconPath(DIR_WS_ICONS . 'heading/fw_multi_order.png');
         
         $panel0 = new Panel();
         $panel1 = new Panel();

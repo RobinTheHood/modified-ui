@@ -12,7 +12,6 @@ class TableExample1
         $page = new Page();
         $page->setHeading('Table Example 1');
         $page->setSubHeading('A nice subheading for table example 1');
-        $page->setIconPath(DIR_WS_ICONS . 'heading/fw_multi_order.png');
 
         $table = new Table();
         $table->addCollumn('Name');

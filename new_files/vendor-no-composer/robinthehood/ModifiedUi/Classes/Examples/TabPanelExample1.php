@@ -12,7 +12,6 @@ class TabPanelExample1
         $page = new Page();
         $page->setHeading('Heading: Test08');
         $page->setSubHeading('Subheading: Tabpanel-Test');
-        $page->setIconPath(DIR_WS_ICONS . 'heading/fw_multi_order.png');
 
         $label1 = new Label();
         $label1->setValue('Label1');
