@@ -7,6 +7,7 @@ class JsBuilder
     /**
      * @param string $viewId
      * @param string $value
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsSetValueRaw(string $viewId, $value): string
@@ -17,6 +18,7 @@ class JsBuilder
     /**
      * @param View $view
      * @param string $value
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsSetValue($view, $value)
@@ -28,6 +30,7 @@ class JsBuilder
     /**
      * @param string $viewIdSrc
      * @param string $viewIdDest
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsCopyValueRaw($viewIdSrc, $viewIdDest): string
@@ -41,6 +44,7 @@ class JsBuilder
     /**
      * @param View $viewSrc
      * @param View $viewDest
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsCopyValue($viewSrc, $viewDest): string
@@ -51,6 +55,7 @@ class JsBuilder
 
     /**
      * @param string $viewId
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsSubmitRaw(string $viewId): string
@@ -60,6 +65,7 @@ class JsBuilder
 
     /**
      * @param View $view
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsSubmit($view): string
@@ -73,6 +79,7 @@ class JsBuilder
      * @param string $url
      * @param string $data
      * @param string $jsSuccessFunction
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsGetRequestRaw($url, $data, $jsSuccessFunction): string
@@ -88,6 +95,7 @@ class JsBuilder
      * @param string $url
      * @param array $params
      * @param string $jsSuccessFunction
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsGetRequest($url, $params, $jsSuccessFunction): string
@@ -105,6 +113,7 @@ class JsBuilder
     /**
      * @param string $viewIdSrc
      * @param string $viewIdDest
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsCopyCheckedRaw(string $viewIdSrc, string $viewIdDest): string
@@ -118,6 +127,7 @@ class JsBuilder
     /**
      * @param View $viewSrc
      * @param View $viewDest
+     *
      * @return string Returns JavaScript code as string.
      */
     public static function jsCopyChecked($viewSrc, $viewDest): string
