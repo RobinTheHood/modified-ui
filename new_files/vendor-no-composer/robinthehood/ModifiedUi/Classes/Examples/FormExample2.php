@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Examples;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\Page;
@@ -77,7 +78,7 @@ class FormExample2
         $action->setCaption('Absenden');
         $form->addComponent($action);
 
-        $form->onSend(function($form) use ($textField1) {
+        $form->onSend(function ($form) use ($textField1) {
             $textField1->setValue($_POST['name']);
         });
 

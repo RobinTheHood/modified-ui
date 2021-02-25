@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Examples;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\Page;
@@ -34,7 +35,7 @@ class FormExample1
         $action->setCaption('Submit');
         $form->addComponent($action);
 
-        $form->onSend(function($form) use ($textField1, $textField2) {
+        $form->onSend(function ($form) use ($textField1, $textField2) {
             $textField1->setValue($_POST['firstName']);
             $textField2->setValue($_POST['lastName']);
         });

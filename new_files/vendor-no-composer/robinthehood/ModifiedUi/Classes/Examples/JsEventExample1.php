@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Examples;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\Page;
@@ -13,7 +14,7 @@ class JsEventExample1
         $page->setSubHeading('A nice subheading for js example 1');
 
         $button = new Button();
-        $button->addJsOnClick(function() {
+        $button->addJsOnClick(function () {
             return "alert('test');";
         });
 

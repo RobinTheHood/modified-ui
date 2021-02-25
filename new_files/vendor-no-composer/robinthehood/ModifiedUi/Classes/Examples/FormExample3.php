@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\ModifiedUi\Classes\Examples;
 
 use RobinTheHood\ModifiedUi\Classes\Admin\Page;
@@ -60,7 +61,7 @@ class FormExample3
 
         // USE VIEW
         $ids = [23, 43, 1, 45];
-        foreach($ids as $id) {
+        foreach ($ids as $id) {
             $table->addRow([$id, 'A', 'B', 'C', 'D', 'E', 'F', 'G']);
         }
 
