@@ -1,11 +1,11 @@
 {
-    "name": "Modul robinthehood/modified-ui",
+    "name": "Modified UI Library (Entwicklung)",
     "archiveName": "robinthehood/modified-ui",
     "sourceDir": "new_files",
     "version": "auto",
     
-    "shortDescription": "Kurzbeschreibung für robinthehood/modified-ui",
-    "description": "Beschreibung für robinthehood/modified-ui",
+    "shortDescription": "Dieses Modul befindet sich noch in Entwicklung.",
+    "description": "Dieses Modul befindet sich noch in der Entwicklung. Es können noch größere Änderungen an den Schnittstellen vorgenommen werden. Bis jetzt sollten nur folgende Klassen verwendet werden:<ul><li>RobinTheHood\\ModifiedUi\\Classes\\Admin\\Page</li><li>RobinTheHood\\ModifiedUi\\Classes\\Admin\\HtmlView</li></ul><br>Unter deine-domain.de/admin/rth_modified_ui.php können einige Beispiele angesehen werden. Hierzu muss der die() Befehl aus der Datei zuerste entfernt werden.",
     
     "developer": "Robin Wieschendorf",
     "developerWebsite": "https://robinwieschendorf.de",
