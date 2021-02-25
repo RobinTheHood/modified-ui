@@ -45,11 +45,11 @@ class Button extends View
 
     public function render()
     {
-        return '
-            <a href="#" id="' . $this->getViewId() . '" class="rth-modified-ui-link" ' . $this->renderJsOnClick() . '>
-                <i class="far fa-trash-alt fa-fw"></i> ' . $this->caption . '
-            </a>
-        ';
+        // return '
+        //     <a href="#" id="' . $this->getViewId() . '" class="rth-modified-ui-link" ' . $this->renderJsOnClick() . '>
+        //         <i class="far fa-trash-alt fa-fw"></i> ' . $this->caption . '
+        //     </a>
+        // ';
 
         // return '
         //     <a id="' . $this->getViewId() . '" class="" ' . $this->renderJsOnClick() . '>

@@ -91,16 +91,16 @@ trait JsEventTrait
 
     public function renderJsOnClick(): string
     {
-        return renderJsEvent('onclick', $this->jsOnClickFunctions);
+        return $this->renderJsEvent('onclick', $this->jsOnClickFunctions);
     }
 
     public function renderJsOnChange()
     {
-        return renderJsEvent('onchange', $this->jsOnChangeFunctions);
+        return $this->renderJsEvent('onchange', $this->jsOnChangeFunctions);
     }
 
     public function renderJsOnKeyup()
     {
-        return renderJsEvent('onkeyup', $this->jsOnKeyupFunctions);
+        return $this->renderJsEvent('onkeyup', $this->jsOnKeyupFunctions);
     }
 }

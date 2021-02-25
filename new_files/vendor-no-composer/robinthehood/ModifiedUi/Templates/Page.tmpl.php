@@ -1,7 +1,7 @@
+<?php require DIR_WS_INCLUDES . 'head.php'; ?>
+
 <?php $stylePath = DIR_FS_DOCUMENT_ROOT . '/vendor-no-composer/robinthehood/ModifiedUi/Templates/Styles/'; ?>
 <?php $webStylePath = '/vendor-no-composer/robinthehood/ModifiedUi/Templates/Styles/'; ?>
-
-<?php require (DIR_WS_INCLUDES . 'head.php'); ?>
     <link href="<?php echo $webStylePath; ?>fontawesome.all.css" rel="stylesheet"> <!--load all styles -->
 
         <style type="text/css">
@@ -204,13 +204,13 @@
         <br>
 
         <script type="text/javascript">
-            $('tbody').sortable({
-                axis: "y",
-                update: function(event, ui) {
-                    var rows = $('tbody tr');
-                    console.log(rows);
-                }
-            });
+            // $('tbody').sortable({
+            //     axis: "y",
+            //     update: function(event, ui) {
+            //         var rows = $('tbody tr');
+            //         console.log(rows);
+            //     }
+            // });
         </script>
     </body>
 </html>
