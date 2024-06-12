@@ -1,0 +1,14 @@
+.rth-modified-ui-splitpanel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rth-modified-ui-splitpanel-left {
+    margin-right: 2px;
+}
+
+.rth-modified-ui-splitpanel-right {
+
+}

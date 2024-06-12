@@ -1,6 +1,6 @@
 <?php
 
-die();
+//die();
 
 require_once 'includes/application_top.php';
 require_once DIR_FS_DOCUMENT_ROOT . '/vendor-no-composer/autoload.php';
