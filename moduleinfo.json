@@ -1,7 +1,7 @@
 {
     "name": "Modified UI Library (Entwicklung)",
     "archiveName": "robinthehood/modified-ui",
-    "sourceDir": "new_files",
+    "sourceDir": "src",
     "version": "auto",
     
     "shortDescription": "Dieses Modul befindet sich noch in Entwicklung.",
@@ -31,7 +31,7 @@
 
     "autoload": {
         "psr-4": {
-            "RobinTheHood\\": "/vendor-no-composer/robinthehood"
+            "RobinTheHood\\ModifiedUi\\": "src-mmlc"
         }
     }
 }
