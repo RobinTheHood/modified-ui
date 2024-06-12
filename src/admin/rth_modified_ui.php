@@ -1,9 +1,8 @@
 <?php
 
-//die();
+die();
 
 require_once 'includes/application_top.php';
-require_once DIR_FS_DOCUMENT_ROOT . '/vendor-no-composer/autoload.php';
 
 restore_error_handler();
 restore_exception_handler();
