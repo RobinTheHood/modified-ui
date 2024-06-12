@@ -53,6 +53,7 @@ class Page extends View
     public function render()
     {
         $this->content = $this->panel->render();
+        global $menu_access;
         require '../vendor-mmlc/robinthehood/modified-ui/Templates/Page.tmpl.php';
     }
 }
