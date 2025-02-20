@@ -67,7 +67,7 @@
         <?php require(DIR_WS_INCLUDES . 'header.php'); ?>
 
         <!-- Content -->
-        <?php if ($error) { ?>
+        <?php if ($error ?? '') { ?>
             <div class="error-message">
                 Fehler: <?php echo $error; ?>
             </div>
@@ -75,8 +75,8 @@
 
         <div class="rth-modified-ui-page">
             <?php echo $this->heading->render() ?>
-            <?php echo $this->pageNavigation; ?>
-            <?php echo $this->content; ?>
+            <?php echo $this->pageNavigation ?? ''; ?>
+            <?php echo $this->content ?? ''; ?>
         </div>
 
         <!-- Footer -->
