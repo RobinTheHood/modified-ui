@@ -1,6 +1,10 @@
 # Änderungsprotokoll
 Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) und verwendet [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.4.0 - 2025-05-19
+### Added
+- Feature: Kompatibilität mit modified 3.1.3 und 3.1.4 hinzugefügt.
+
 ## 0.3.0 - 2025-02-20
 ### Added
 - Feature: Kompatibilität mit modified 3.1.0, 3.1.1 und 3.1.2 hinzugefügt.
